@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ipc.Connect", "Ipc.Connect\Ipc.Connect.csproj", "{691F1F3A-FE12-420D-8914-370E07E0ACDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ipc.Connect.Test", "Ipc.Connect.Test\Ipc.Connect.Test.csproj", "{803A8F91-D9FE-4C37-94C9-9A4CD220E676}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{691F1F3A-FE12-420D-8914-370E07E0ACDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{691F1F3A-FE12-420D-8914-370E07E0ACDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{691F1F3A-FE12-420D-8914-370E07E0ACDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{691F1F3A-FE12-420D-8914-370E07E0ACDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{803A8F91-D9FE-4C37-94C9-9A4CD220E676}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{803A8F91-D9FE-4C37-94C9-9A4CD220E676}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{803A8F91-D9FE-4C37-94C9-9A4CD220E676}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{803A8F91-D9FE-4C37-94C9-9A4CD220E676}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50C16A16-5743-4A6F-9C2E-74ADF16DB453}
+	EndGlobalSection
+EndGlobal

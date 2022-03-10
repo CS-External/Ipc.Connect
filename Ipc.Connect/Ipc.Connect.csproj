@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Authors>Christian-Schl</Authors>
+    <PackageTags>IPC</PackageTags>
+    <Description>A cross-platform shared memory Client/Server Implementation</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Cloudtoid.Interprocess" Version="1.0.167" />
+  </ItemGroup>
+
+</Project>
