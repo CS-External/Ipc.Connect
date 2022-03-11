@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <Authors>Christian-Schl</Authors>
-    <PackageTags>IPC</PackageTags>
+    <PackageTags>IPC;Interprocess Communication</PackageTags>
     <Description>A cross-platform shared memory Client/Server Implementation</Description>
     <PackageProjectUrl>https://github.com/CS-External/Ipc.Connect</PackageProjectUrl>
     <RepositoryUrl>https://github.com/CS-External/Ipc.Connect</RepositoryUrl>
