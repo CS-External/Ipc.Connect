@@ -51,6 +51,14 @@ The system is designed for high performance. This means the comunication has ver
 | Send 10 GB Data                                 |    `1700` | Bandwidth 47 Gbit/s     |
 | Retrieve 10 GB Data                             |    `1700` | Bandwidth 47 Gbit/s     |
 
+Times are measured on an Intel i7-9750H (2.6 GHz), 16 GB Memory and Windows 11
+
+
+# Dependencies
+
+* [Dotnet 6](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
+* [Cloudtoid.Interprocess](https://www.nuget.org/packages/Cloudtoid.Interprocess/)
+
 
 
 
