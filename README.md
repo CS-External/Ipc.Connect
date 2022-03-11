@@ -15,7 +15,7 @@ The main idea of this library is to have an easy to use IPC (Inter Process Commu
   IpcChannelFactory channelFactory = new IpcChannelFactory();
   
   // Create the Server
-  IpcServer server = new IpcServer(m_ChannelFactory);
+  IpcServer server = new IpcServer(channelFactory);
   server.Listen("MyChannelName", new IpcServerRequestHandlerDelegate((reqestStream) => {
     // handle the request here
   
@@ -24,3 +24,22 @@ The main idea of this library is to have an easy to use IPC (Inter Process Commu
   }));
   
 ```
+
+## Connect to the Server
+
+```csharp
+  // Create a new ChannelFactory. The Settings of this Factory should be same on Client and Server 
+  IpcChannelFactory channelFactory = new IpcChannelFactory();
+  
+  // Create the Client
+  IpcClient client = new IpcClient(channelFactory, "MyChannelName")
+  using (Stream responseStream = client.Send(new IpcDataBytes(Encoding.UTF8.GetBytes("Hello World")), TimeSpan.FromSeconds(2)))
+  {
+      // Process the response
+  }
+  
+```
+
+
+# Performance
+
