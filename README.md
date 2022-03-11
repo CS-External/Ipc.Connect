@@ -40,6 +40,7 @@ The main idea of this library is to have an easy to use IPC (Interprocess Commun
   
 ```
 
+For more example you can also check the Tests
 
 # Performance
 
