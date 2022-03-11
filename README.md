@@ -45,7 +45,11 @@ The main idea of this library is to have an easy to use IPC (Inter Process Commu
 
 The system is designed for high performance. This means the comunication has very low overhead and high bandwidth.
 
-## Many Request Performance
+|                                          Method | Time (ms) | Comment                 |
+|------------------------------------------------ |----------:|------------------------:|
+| Execute 100000 Small Request                    |    `2400` | For one Request (24 ns) |
+| Send 10 GB Data                                 |    `1700` | Bandwidth 47 Gbit/s     |
+| Retrieve 10 GB Data                             |    `1700` | Bandwidth 47 Gbit/s     |
 
 
 
