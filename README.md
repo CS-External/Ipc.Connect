@@ -16,7 +16,7 @@ The main idea of this library is to have an easy to use IPC (Inter Process Commu
   
   // Create the Server
   IpcServer server = new IpcServer(m_ChannelFactory);
-  server.listen("MyChannelName", new IpcServerRequestHandlerDelegate((reqestStream) => {
+  server.Listen("MyChannelName", new IpcServerRequestHandlerDelegate((reqestStream) => {
     // handle the request here
   
     // Return Result
