@@ -5,6 +5,8 @@
     <Authors>Christian-Schl</Authors>
     <PackageTags>IPC</PackageTags>
     <Description>A cross-platform shared memory Client/Server Implementation</Description>
+    <PackageProjectUrl>https://github.com/CS-External/Ipc.Connect</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/CS-External/Ipc.Connect</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
