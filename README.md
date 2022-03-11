@@ -43,3 +43,11 @@ The main idea of this library is to have an easy to use IPC (Inter Process Commu
 
 # Performance
 
+The system is designed for high performance. This means the comunication has very low overhead and high bandwidth.
+
+## Many Request Performance
+
+
+
+
+
