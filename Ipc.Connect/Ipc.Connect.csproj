@@ -1,5 +1,5 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <Authors>Christian-Schl</Authors>
@@ -7,11 +7,9 @@
     <Description>A cross-platform shared memory Client/Server Implementation</Description>
     <PackageProjectUrl>https://github.com/CS-External/Ipc.Connect</PackageProjectUrl>
     <RepositoryUrl>https://github.com/CS-External/Ipc.Connect</RepositoryUrl>
-	  <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="Cloudtoid.Interprocess" Version="1.0.167" />
   </ItemGroup>
-
 </Project>
