@@ -1,6 +1,3 @@
-# WIP
-
-
 # Ipc.Connect
 A cross-platform shared memory Client/Server Implementation
 
