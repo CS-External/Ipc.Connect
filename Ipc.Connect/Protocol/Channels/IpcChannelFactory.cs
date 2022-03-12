@@ -30,7 +30,7 @@ namespace Ipc.Connect.Protocol.Channels
 
         public IpcChannelFactory()
         {
-            m_LoggerFactory = new NullLoggerFactory();
+            m_LoggerFactory = NullLoggerFactory.Instance;
             BufferSize = 2 * 1024 * 1024; // 2 MB
             MaxMessageSize = 64 * 1024;
         }
@@ -45,6 +45,7 @@ namespace Ipc.Connect.Protocol.Channels
 
         public IpcChannelFactory(long p_BufferSize)
         {
+            m_LoggerFactory = NullLoggerFactory.Instance;
             BufferSize = p_BufferSize;
             MaxMessageSize = p_BufferSize / 10;
         }
@@ -62,6 +63,7 @@ namespace Ipc.Connect.Protocol.Channels
 
         public IpcChannelFactory(long p_BufferSize, long p_MaxMessageSize)
         {
+            m_LoggerFactory = NullLoggerFactory.Instance;
             BufferSize = p_BufferSize;
             MaxMessageSize = p_MaxMessageSize;
 

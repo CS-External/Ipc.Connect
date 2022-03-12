@@ -18,14 +18,23 @@ namespace Ipc.Connect.Client
         private IpcChannelFactory m_ChannelFactory;
         private String m_ChannelName;
         private ConcurrentBag<IpcClientSocket> m_Sockets;
+        private IpcClientOptions m_Options;
 
-        public IpcClient(IpcChannelFactory p_ChannelFactory, String p_Channel)
+        public IpcClient(IpcChannelFactory p_ChannelFactory, String p_Channel, IpcClientOptions p_Options)
         {
             m_ChannelName = p_Channel;
             m_ChannelFactory = p_ChannelFactory;
             m_Logger = m_ChannelFactory.LoggerFactory.CreateLogger(GetType());
             m_Sockets = new ConcurrentBag<IpcClientSocket>();
+            m_Options = p_Options;
         }
+
+        public IpcClient(IpcChannelFactory p_ChannelFactory, string p_ChannelName)
+        {
+            m_ChannelFactory = p_ChannelFactory;
+            m_ChannelName = p_ChannelName;
+        }
+
 
         public int PooledConnectionCount
         {
@@ -42,7 +51,7 @@ namespace Ipc.Connect.Client
 
         public Stream Send(IIpcData p_Data, TimeSpan p_TimeOut)
         {
-            IpcClientSocket l_Socket = GetSocket(p_TimeOut);
+            IpcClientSocket l_Socket = GetSocket();
             try
             {
                 Stream l_Stream = l_Socket.Send(p_Data, p_TimeOut);
@@ -83,7 +92,7 @@ namespace Ipc.Connect.Client
             m_Sockets.Add(p_Socket);
         }
 
-        private IpcClientSocket GetSocket(TimeSpan p_TimeOut)
+        private IpcClientSocket GetSocket()
         {
             IpcClientSocket l_Socket = null;
 
@@ -109,7 +118,7 @@ namespace Ipc.Connect.Client
                 return l_Socket;
 
             l_Socket = new IpcClientSocket(m_ChannelFactory);
-            l_Socket.Connect(m_ChannelName, p_TimeOut);
+            l_Socket.Connect(m_ChannelName, m_Options.ConnectTimeOut);
             return l_Socket;
         }
 
