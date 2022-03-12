@@ -1,4 +1,10 @@
 # Ipc.Connect
+
+![Nuget](https://img.shields.io/nuget/v/Ipc.Connect)
+![GitHub](https://img.shields.io/github/license/CS-External/Ipc.Connect)
+![GitHub top language](https://img.shields.io/github/languages/top/CS-External/Ipc.Connect)
+
+
 A cross-platform shared memory Client/Server Implementation
 
 The main idea of this library is to have an easy to use IPC (Interprocess Communication) library which you can use as other client / server library.
@@ -45,7 +51,7 @@ The system is designed for high performance. This means the comunication has ver
 
 |                                          Method | Time (ms) | Comment                                                |
 |------------------------------------------------ |----------:|-------------------------------------------------------:|
-| Execute 100000 Small Request                    |    `2400` | For one Request (24 ns) or (41666 Requests per second) |
+| Execute 100000 Small Request                    |    `2400` | (For one Request 24 ns) or (41666 Requests per second) |
 | Send 10 GB Data                                 |    `1700` | Bandwidth 47 Gbit/s                                    |
 | Retrieve 10 GB Data                             |    `1700` | Bandwidth 47 Gbit/s                                    |
 
