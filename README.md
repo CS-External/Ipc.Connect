@@ -43,11 +43,11 @@ For more example you can also check the Tests
 
 The system is designed for high performance. This means the comunication has very low overhead and high bandwidth.
 
-|                                          Method | Time (ms) | Comment                 |
-|------------------------------------------------ |----------:|------------------------:|
-| Execute 100000 Small Request                    |    `2400` | For one Request (24 ns) |
-| Send 10 GB Data                                 |    `1700` | Bandwidth 47 Gbit/s     |
-| Retrieve 10 GB Data                             |    `1700` | Bandwidth 47 Gbit/s     |
+|                                          Method | Time (ms) | Comment                                                |
+|------------------------------------------------ |----------:|-------------------------------------------------------:|
+| Execute 100000 Small Request                    |    `2400` | For one Request (24 ns) or (41666 Requests per second) |
+| Send 10 GB Data                                 |    `1700` | Bandwidth 47 Gbit/s                                    |
+| Retrieve 10 GB Data                             |    `1700` | Bandwidth 47 Gbit/s                                    |
 
 Times are measured on an Intel i7-9750H (2.6 GHz), 16 GB Memory and Windows 11
 
