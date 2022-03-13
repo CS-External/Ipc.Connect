@@ -44,7 +44,7 @@ namespace Ipc.Connect.Server
             m_Name= p_Name;
             m_Handler = p_Handler;
             m_Cancellation = new CancellationTokenSource();
-            m_ListingTask = new Task(DoListen);
+            m_ListingTask = new Task(DoListen, TaskCreationOptions.LongRunning);
             m_ListingTask.Start();
         }
 

@@ -73,7 +73,7 @@ namespace Ipc.Connect.Server
 
         private void StartListenForRequests(TimeSpan p_Timeout)
         {
-            Task l_Task = new Task(() => ListenForRequests(p_Timeout));
+            Task l_Task = new Task(() => ListenForRequests(p_Timeout), TaskCreationOptions.LongRunning);
             l_Task.Start();
         }
 

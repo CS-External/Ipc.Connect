@@ -141,7 +141,7 @@ namespace Ipc.Connect.Client
 
             m_SendBuffer = new byte[m_IpcSenderChannel.MaxMessageDataSize];
 
-            Task l_Task = new Task(KeepAliveTask);
+            Task l_Task = new Task(KeepAliveTask, TaskCreationOptions.LongRunning);
             l_Task.Start();
         }
 

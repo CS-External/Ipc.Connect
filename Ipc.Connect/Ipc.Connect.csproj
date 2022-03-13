@@ -8,7 +8,14 @@
     <PackageProjectUrl>https://github.com/CS-External/Ipc.Connect</PackageProjectUrl>
     <RepositoryUrl>https://github.com/CS-External/Ipc.Connect</RepositoryUrl>
     <Version>1.0.3</Version>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Cloudtoid.Interprocess" Version="1.0.167" />
   </ItemGroup>
