@@ -29,10 +29,9 @@ namespace Ipc.Connect.Client
             m_Options = p_Options;
         }
 
-        public IpcClient(IpcChannelFactory p_ChannelFactory, string p_ChannelName)
+        public IpcClient(IpcChannelFactory p_ChannelFactory, string p_ChannelName): this(p_ChannelFactory, p_ChannelName, new IpcClientOptions())
         {
-            m_ChannelFactory = p_ChannelFactory;
-            m_ChannelName = p_ChannelName;
+
         }
 
 
