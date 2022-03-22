@@ -1,6 +1,6 @@
 # Ipc.Connect
 
-![Nuget](https://img.shields.io/nuget/v/Ipc.Connect)
+[![Nuget](https://img.shields.io/nuget/v/Ipc.Connect)](https://www.nuget.org/packages/Ipc.Connect/)
 ![GitHub](https://img.shields.io/github/license/CS-External/Ipc.Connect)
 ![GitHub top language](https://img.shields.io/github/languages/top/CS-External/Ipc.Connect)
 
