@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Authors>Christian-Schl</Authors>
     <PackageTags>IPC;Interprocess Communication</PackageTags>
     <Description>A cross-platform shared memory Client/Server Implementation</Description>
@@ -17,6 +17,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Cloudtoid.Interprocess" Version="1.0.167" />
+    <PackageReference Include="Cloudtoid.Interprocess" Version="1.0.175" />
   </ItemGroup>
 </Project>
