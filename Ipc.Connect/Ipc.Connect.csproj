@@ -7,7 +7,7 @@
     <Description>A cross-platform shared memory Client/Server Implementation</Description>
     <PackageProjectUrl>https://github.com/CS-External/Ipc.Connect</PackageProjectUrl>
     <RepositoryUrl>https://github.com/CS-External/Ipc.Connect</RepositoryUrl>
-    <Version>1.0.5</Version>
+    <Version>1.0.6</Version>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   <ItemGroup>
